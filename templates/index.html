@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.B.MEHTA </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/signup">Sign up</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/database">Database</a></li>
+    </ul>
+    <div class="slider">
+      <img src="{{ url_for('static', filename='image/banner.png') }}" alt="" />
+    </div>
+    <form class="login">
+      <h2>Welcome, Student!</h2>
+      <p>Please log in</p>
+      <input type="text" placeholder="User Name" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <div class="links">
+        <a href="#">Forgot password</a>
+        <a href="#">Register</a>
+      </div>
+    </form>
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>User Name</th>
+        <th>Password</th>
+      </tr>
+      <tr><td>01</td> <td>Rohan</td> <td>SDjgn&%*kdf</td></tr>
+      <tr><td>01</td> <td>Rohan</td> <td>SDjgn&%*kdf</td></tr>
+      <tr><td>01</td> <td>Rohan</td> <td>SDjgn&%*kdf</td></tr>
+      <tr><td>01</td> <td>Rohan</td> <td>SDjgn&%*kdf</td></tr>
+    </table>
+
+    <footer>
+      <p>Copyright &copy; 2019 All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

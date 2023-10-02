@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <ul>
+        <li><a  href="/">Home</a></li>
+      <li><a href="/signup">Sign up</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a class="active" href="/database">Database</a></li>
+      </ul>
+      <div  style="height: 70vh;">
+
+     <p>{{alldata}}</p>
+    <table>
+        <tr>
+          <th>Id</th>
+          <th>User Name</th>
+          <th>Password</th>
+        </tr>
+
+        {% for item in data %}
+          
+        <tr><td>{{ item.serial_number }}</td> <td>{{ item.username }}</td> <td>{{item.password}}</td></tr>
+
+        {% endfor %}
+
+      </table>
+    </div>
+  
+      <footer>
+        <p>Copyright &copy; 2019 All Rights Reserved.</p>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #291876;
+  justify-content: flex-end;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #F6BE29;
+  color: #000;
+  border-radius: 5px;
+}
+a.active {
+  background-color: #F6BE29;
+  color: #000;
+}
+footer p {
+  padding: 40px 0;
+  text-align: center;
+}
+footer {
+  margin-top: 10px;
+  background: #291876;
+  color: #fff;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+body {
+  background: #DEDEF8;
+  font-family: Raleway, sans-serif;
+  color: #666;
+  width: 100%;
+}
+
+.login {
+  margin: 20px auto;
+  padding: 40px 50px;
+  max-width: 300px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 1px 1px 1px #666;
+}
+.login input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 14px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  font-family: Raleway, sans-serif;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  border: 1px solid #c0c0c0;
+  transition: 0.2s;
+}
+
+.login input[type="text"]:hover {
+  border-color: #F6BE29;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.login input[type="submit"] {
+  border: none;
+  background: #291876;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+  margin: 20px 0px;
+}
+
+.login input[type="submit"]:hover {
+  background: #e1a187;
+}
+
+.login h2 {
+  margin: 20px 0 0;
+  color: #ef5350;
+  font-size: 28px;
+}
+
+.login p {
+  margin-bottom: 40px;
+}
+
+.links {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+}
+
+.links a:first-child {
+  text-align: left;
+}
+
+.links a:last-child {
+  text-align: right;
+}
+
+.login h2,
+.login p,
+.login a {
+  text-align: center;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+.slider {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+  overflow-y: auto;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+td,
+th {
+  border: 1px solid #291876;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #F6BE29;
+}
